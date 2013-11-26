@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.niu.cs.codyengel.hellodate"
+    package="com.codyengel.helloglass"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name" >
         <activity
-            android:name="edu.niu.cs.codyengel.hellodate.MainActivity"
+            android:name="com.codyengel.helloglass.Magic"
+            android:label="@string/app_name"
+            android:enabled="true">            
+        </activity>
+        <service
+            android:name="com.codyengel.helloglass.HelloGlass"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_start" />
+        </service>
+        <!--
+        <activity
+            android:name="com.codyengel.helloglass.HelloGlass"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +41,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.codyengel.helloglass.Magic"
+            android:label="@string/title_activity_magic" >
+        </activity>
+        -->
     </application>
 
 </manifest>

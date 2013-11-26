@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- For Voice Triggers and Stuff -->
+
+<trigger keyword="@string/start_helloglass" /> <!-- The string used to start the application from the "Okay, Glass" menu -->

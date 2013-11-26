@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hello Date</string>
+    <string name="app_name">Hello Glass</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="date">Current Date</string>
+
+    <!-- Voice Command Stuff? -->
+    <string name="start_helloglass">hello glass</string> <!-- The phrase used to start the application. -->
+    <string name="stop">Goodbye Glass</string>
+    <string name="hello_glass">Hello, Glass!</string>
+    <string name="title_activity_magic">Magic</string>
 
 </resources>
