@@ -4,7 +4,7 @@ import com.google.android.glass.app.Card;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+
 import android.view.View;
 
 public class Magic extends Activity {
@@ -19,7 +19,7 @@ public class Magic extends Activity {
 		 */
 		Card card1 = new Card(this);
 		card1.setText("Hello, Sir!");
-		card1.setInfo("..or Ma'am");
+		card1.setFootnote("..or Ma'am");
 		View card1View = card1.toView();
 		
 		// Display the card we just created
