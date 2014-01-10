@@ -39,7 +39,7 @@ public class HelloGlass extends Service {
 	 */
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		// Where the magic happens
-		mLiveCard = mTimelineManager.getLiveCard(LIVE_CARD_ID);
+		mLiveCard = mTimelineManager.createLiveCard(LIVE_CARD_ID);
 		
 		Intent i = new Intent(this, Magic.class);
 		i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

@@ -1,0 +1,11 @@
+Hello Glass is a very basic application written for Google Glass.
+
+It's voice trigger is "Hello Glass" and it displays a card to say "Hello, Sir! ...Or Ma'am".
+
+I strongly recommend looking at Google's official documentation - https://developers.google.com/glass/develop/gdk/
+
+[Changelog]
+
+GDK Sneak Peak v2 [01/10/2014]
+	- Changed getLiveCard to createLiveCard
+	- Changed setInfo to setFootnote
