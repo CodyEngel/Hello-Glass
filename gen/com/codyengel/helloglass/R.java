@@ -192,8 +192,6 @@ public final class R {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int hello_glass=0x7f060004;
-        /**  Voice Command Stuff? 
-         */
         public static final int start_helloglass=0x7f060002;
         /**  The phrase used to start the application. 
          */

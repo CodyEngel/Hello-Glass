@@ -1,3 +1,10 @@
+/*
+ * Magic.java
+ * @author Cody Engel
+ * http://codyengel.info
+ * 
+ * This is the service which is started from HelloGlass.java, this is where the magic happens.
+ */
 package com.codyengel.helloglass;
 
 import com.google.android.glass.app.Card;

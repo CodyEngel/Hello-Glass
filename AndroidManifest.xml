@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="15" />
-
+	
+    <!-- Note that HelloGlass doesn't not use a theme. Don't use themes. -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,26 +27,12 @@
             <intent-filter>
                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
             </intent-filter>
-
+			
+            <!-- Voice command found in res/xml/voice_trigger_start -->
             <meta-data
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger_start" />
         </service>
-        <!--
-        <activity
-            android:name="com.codyengel.helloglass.HelloGlass"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.codyengel.helloglass.Magic"
-            android:label="@string/title_activity_magic" >
-        </activity>
-        -->
     </application>
 
 </manifest>

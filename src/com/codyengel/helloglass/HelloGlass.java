@@ -1,3 +1,8 @@
+/*
+ * HelloGlass.java
+ * @author Cody Engel
+ * http://codyengel.info
+ */
 package com.codyengel.helloglass;
 
 // Glass Specific
@@ -8,17 +13,23 @@ import android.os.IBinder;
 import android.app.Service;
 import android.content.Intent;
 
-/**
- * Main Activity
- * @author Cody Engel
- *
- */
 public class HelloGlass extends Service {
 	
-	private static final String TAG = "HelloGlass"; 		// For console logs
 	private static final String LIVE_CARD_ID = "helloglass";
 	
+	/*
+	 * TimelineManager allows applications to interact with the timeline.
+	 * 
+	 * Additional information: https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/timeline/TimelineManager
+	 */
 	private TimelineManager mTimelineManager;
+	
+	/*
+	 * LiveCard lets you create cards as well as publish them to the users timeline.
+	 * 
+	 * Additional information: https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/timeline/LiveCard
+	 */
+	@SuppressWarnings("unused")
 	private LiveCard mLiveCard;
 	
 	@Override
@@ -33,9 +44,7 @@ public class HelloGlass extends Service {
 	} // IBinder
 	
 	/*
-	 * As far as I can tell this is what gets called once the application has launched.
-	 * 
-	 * I am creating a new intent, Magic.class, which is where the rest of the code resides for the application.
+	 * onStartCommand is used to start a service from your voice trigger you set up in res/xml/voice_trigger_start.xml
 	 */
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		// Where the magic happens

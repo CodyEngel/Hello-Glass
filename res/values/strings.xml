@@ -4,8 +4,8 @@
     <string name="app_name">Hello Glass</string>
     <string name="action_settings">Settings</string>
 
-    <!-- Voice Command Stuff? -->
     <string name="start_helloglass">hello glass</string> <!-- The phrase used to start the application. -->
+    
     <string name="stop">Goodbye Glass</string>
     <string name="hello_glass">Hello, Glass!</string>
     <string name="title_activity_magic">Magic</string>
